@@ -12,6 +12,13 @@
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
+#buttonSearch{
+    background-color: #044863;
+    height: 66px ;
+    width: 104%;
+    border: 0px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -27,7 +34,13 @@
 }
 .menu li{
     height: 50px;
-    width: 106%;
+    width: 110%;
+}
+.menu li :hover{
+    background-color: aquamarine;
+    height: 50px;
+    transition-duration: 1s;
+    width: 110%;
 }
 .menu li a {
     color: white;
