@@ -1,3 +1,9 @@
+body{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* header */
 .header{
     overflow: hidden;
     position: fixed;
@@ -5,22 +11,13 @@
     width: 100%;
     z-index: 2000;
 }
-.sidebar{
-    overflow: hidden;
-    position: fixed;
-    z-index: 2000;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-}
 #buttonSearch{
     background-color: #044863;
     height: 66px ;
-    width: 104%;
     border: 0px;
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
-}
-::-webkit-scrollbar {
-    display: none;
+    display: block;
+    width: 100%;
 }
 .row .center-logo img{
     position: absolute;
@@ -29,226 +26,267 @@
     right: 0;
     margin-top: 5px;
 }
-.card-right a{
+/* end header */
+
+/* sidebar menu*/
+.sidebar{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 780px;
+}
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.menu li{
+    width: 100%;
+    min-height: 52px;
+    max-height: 52px;
+    color: white;
+    border-bottom: 0.001em solid #2f3438;
+}
+.menu li a{
+    color: white;
+    padding-top: 12px;
+}
+#nav-item-1 :hover{
+    background-color: aquamarine;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-1 :focus{
+    background-color: aquamarine;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-2 :hover{
+    background-color: red;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-2 :focus{
+    background-color: red;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-3 :hover{
+    background-color: greenyellow;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-3 :focus{
+    background-color: greenyellow;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-4 :hover{
+    background-color: brown;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-4 :focus{
+    background-color: brown;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-5 :hover{
+    background-color: rgba(127, 210, 255, 0.618);
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-5 :focus{
+    background-color: rgba(127, 210, 255, 0.618);
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-6 :hover{
+    background-color: rgb(255, 127, 155);
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-6 :focus{
+    background-color: rgb(255, 127, 155);
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-7 :hover{
+    background-color: tan;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-7 :focus{
+    background-color: tan;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-8 :hover{
+    background-color: crimson;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-8 :focus{
+    background-color: crimson;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-9 :hover{
+    background-color: darkcyan;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-9 :focus{
+    background-color: darkcyan;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-10 :hover{
+    background-color: darkkhaki;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-10 :focus{
+    background-color: darkkhaki;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-11 :hover{
+    background-color: gold;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-11 :focus{
+    background-color: gold;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-12 :hover{
+    background-color: grey;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-12 :focus{
+    background-color: grey;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-13 :hover{
+    background-color: darkkhaki;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-13 :focus{
+    background-color: darkkhaki;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-14 :hover{
+    background-color: gold;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-14 :focus{
+    background-color: gold;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#nav-item-15 :hover{
+    background-color: grey;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+#nav-item-15 :focus{
+    background-color: grey;
+    transition-duration: 1s;
+    min-height: 52px;
+    max-height: 52px;
+}
+/* end side bar menu*/
+
+.photo-content{
+    height: 100%;
+    width: 100%;
+    padding: 25px 0px 0px 0px;
+}
+.div-content{
+    max-height: 800px;
+    min-height: 600px;
+    width: 100%;
+}
+.content{
+    background-color: aqua;
+    height: 70%;
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    padding: 4% 7% 0px 5%;
+}
+.main-photo{
+    background-image: url(https://picsum.photos/1920/1080);
+    background-repeat: no-repeat;
+}
+.side-photo{
+    background-image: url(https://picsum.photos/1920/1080);
+    background-repeat: no-repeat;
+}
+/* .content .row{
+    padding-top: 15px;
+    padding-bottom: 15px;
+} */
+/* .card-right a{
     background-color: rgba(0, 0, 0, 0.2);
     height: 150px;margin-top: 40px;
     color: white;
     font-weight: bolder;
-}
-.linkPhoto :hover{
+} */
+/* .linkPhoto :hover{
     background-color: #044863;
-}
-.card-right a:hover{
+} */
+/* .card-right a:hover{
     background-color: rgba(255, 255, 255, 0.4);
     transition-duration: 1s;
     color: white;
     font-weight: bold;
     -webkit-box-shadow: 0 0 5px 3px rgb(0, 0, 0,0.2);
-}
-.menu{
-    margin-top: 66px;
-}
-.menu li{
-    height: 50px;
-    width: 110%;
-}
-
-/* sidebar hover and focus */
-#nav-item-1 :hover{
-    background-color: aquamarine;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-1 :focus{
-    background-color: aquamarine;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-2:hover{
-    background-color: red;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-2 :focus{
-    background-color: red;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-3 :hover{
-    background-color: greenyellow;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-3 :focus{
-    background-color: greenyellow;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-4 :hover{
-    background-color: brown;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-4 :focus{
-    background-color: brown;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-5 :hover{
-    background-color: rgba(127, 210, 255, 0.618);
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-5 :focus{
-    background-color: rgba(127, 210, 255, 0.618);
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-6 :hover{
-    background-color: rgb(255, 127, 155);
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-6 :focus{
-    background-color: rgb(255, 127, 155);
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-7 :hover{
-    background-color: tan;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-7 :focus{
-    background-color: tan;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-8 :hover{
-    background-color: crimson;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-8 :focus{
-    background-color: crimson;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-9 :hover{
-    background-color: darkcyan;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-9 :focus{
-    background-color: darkcyan;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-10 :hover{
-    background-color: darkkhaki;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-10 :focus{
-    background-color: darkkhaki;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-11 :hover{
-    background-color: gold;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-11 :focus{
-    background-color: gold;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-12 :hover{
-    background-color: grey;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-12 :focus{
-    background-color: grey;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-13 :hover{
-    background-color: darkkhaki;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-13 :focus{
-    background-color: darkkhaki;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-14 :hover{
-    background-color: gold;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-14 :focus{
-    background-color: gold;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-
-#nav-item-15 :hover{
-    background-color: grey;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-#nav-item-15 :focus{
-    background-color: grey;
-    height: 50px;
-    transition-duration: 1s;
-    width: 110%;
-}
-/* end side bar hover and focus */
-.menu li a {
-    color: white;
-}
+} */
