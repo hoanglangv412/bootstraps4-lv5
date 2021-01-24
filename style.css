@@ -32,18 +32,15 @@ body{
 .sidebar{
     scroll-behavior: smooth;
     overflow-y: scroll;
-    height: 780px;
+    height: 100%;
 }
 .sidebar::-webkit-scrollbar {
     display: none;
 }
-
 .menu li{
-    width: 100%;
-    min-height: 52px;
-    max-height: 52px;
+    height: 52px;
     color: white;
-    border-bottom: 0.001em solid #2f3438;
+    border-bottom: 0.001em solid #313639;
 }
 .menu li a{
     color: white;
@@ -244,48 +241,75 @@ body{
     max-height: 52px;
 }
 /* end side bar menu*/
-
-.photo-content{
-    height: 100%;
-    width: 100%;
-    padding: 25px 0px 0px 0px;
-}
-.div-content{
-    max-height: 800px;
-    min-height: 600px;
-    width: 100%;
-}
-.content{
-    height: 70%;
-    width: 100%;
-    padding: 10px 0px 0px 0px;
-    padding: 4% 7% 0px 5%;
-}
 .main-photo{
-    background-image: url(https://picsum.photos/1920/1080);
-    background-repeat: no-repeat;
+    padding: 0px;
+    position: relative;
 }
 .side-photo{
-    background-image: url(https://picsum.photos/1920/1080);
-    background-repeat: no-repeat;
+    padding: 0px;
+    position: relative;
 }
-/* .content .row{
-    padding-top: 15px;
-    padding-bottom: 15px;
-} */
-/* .card-right a{
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 150px;margin-top: 40px;
+.box-desciption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer a{
+    text-decoration: underline;
+}
+.content img{
+    border-radius: 0;
+}
+.bottom-photo-text{
+    text-shadow: (0, 0, 0,0.3);
+    font-weight: 700;
     color: white;
-    font-weight: bolder;
-} */
-/* .linkPhoto :hover{
-    background-color: #044863;
-} */
-/* .card-right a:hover{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01), rgba(0, 0, 0,0.8));
+}
+.card{
+    margin-top: 4%;
+}
+.card-link .card-img-overlay:hover{
+    -webkit-box-shadow: 0 0 10px 2px rgb(0, 0, 0,0.6);
+}
+.card-right{
+    margin-top: 15px;
+    padding: 15%;
+    background-color: white;
+    border: 0.01em solid #dfdfdf;
+}
+.card-right a{
+    margin-bottom: 40px;
+}
+.card-right .card-img-overlay:hover{
     transition-duration: 1s;
-    color: white;
-    font-weight: bold;
-    -webkit-box-shadow: 0 0 5px 3px rgb(0, 0, 0,0.2);
-} */
+    background-color: rgba(255, 255, 255,0.4);
+    -webkit-box-shadow: 0 0 10px 5px rgb(0, 0, 0,0.6);
+}
+.sale-div{
+    top:0;
+    bottom:0;
+    right:0;
+    height: 33px;
+    width:47px;
+    border-radius: 0;
+    padding: 6px;
+    margin-top: 57%;
+    margin-right: -9px;
+    z-index: 1900;
+}
+.sale-div::after{
+    border-right: 10px solid transparent;
+    border-top: 7px solid rgba(0,0,0,.5);
+    bottom: -7px;
+    right: 0;
+    content: "";
+    position: absolute;
+}
+.carousel-indicators li{
+    border: 1px solid rgba(0,0,0,.5);
+    width: 15px;height: 15px;border-radius: 50%;
+}
+.carousel-indicators li.active{
+    background-color: purple !important;
+}

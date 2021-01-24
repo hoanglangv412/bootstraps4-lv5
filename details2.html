@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="background-color: #edeff0;">
+    <div class="container-xxl">
+        <header class="header" style="background-color: #044863;height: 66px;">
+            <div class="row">
+                <div class="col-md-2 col-xxl-2" style="min-width: 250px;"></div>
+                <div class="col-md-2 col-xxl-2 position-fixed" style="min-width: 250px;">
+                    <button id="buttonSearch"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="white" class="bi bi-search" viewBox="0 0 15 15">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="col d-flex justify-content-end align-items-center" style="padding: 15px;">
+                    <div class="link-app" style="margin-right: 30px;">
+                        <a href="#"><img src="photos/appstore.png" width="120px" height="40px" id="appstoreLogo"></a>
+                        <a href="#"><img src="photos/googleplay.png" width="120px" height="40px"
+                                id="googleplayLogo"></a>
+                    </div>
+                </div>
+                <div class="center-logo">
+                    <a href="#"><img src="photos/logo.png" width="130px" height="50px" id="logoPhoto"></a>
+                </div>
+            </div>
+        </header>
+        <div class="menu" style="margin-top: 66px;">
+            <div class="row">
+                <div class="col-md-2 col-xxl-2" style="min-width: 250px;"></div>
+                <div class="col-md-2 col-xxl-2 d-none d-md-block sidebar position-fixed menu" style="min-width: 250px;">
+                    <div class="sidebar-sticky bg-dark" style="height: 100%;">
+                        <ul class="nav flex-column bg-dark">
+                            <li class="nav-item" id="nav-item-1">
+                                <a class="nav-link" href="#">
+                                    Home Page
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-3">
+                                <a class="nav-link" href="#">
+                                    Social engagement
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-4">
+                                <a class="nav-link" href="#">
+                                    Year-end sale
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-2">
+                                <a class="nav-link" href="#">
+                                    Politics
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-5">
+                                <a class="nav-link" href="#">
+                                    Current month
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-6">
+                                <a class="nav-link" href="#">
+                                    Last quarter
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-7">
+                                <a class="nav-link" href="#">
+                                    Social engagement
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-8">
+                                <a class="nav-link" href="#">
+                                    Year-end sale
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-9">
+                                <a class="nav-link" href="#">
+                                    Current month
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-10">
+                                <a class="nav-link" href="#">
+                                    Last quarter
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-11">
+                                <a class="nav-link" href="#">
+                                    Social engagement
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-12">
+                                <a class="nav-link" href="#">
+                                    Year-end sale
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-13">
+                                <a class="nav-link" href="#">
+                                    Current month
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-14">
+                                <a class="nav-link" href="#">
+                                    Last quarter
+                                </a>
+                            </li>
+                            <li class="nav-item" id="nav-item-15">
+                                <a class="nav-link" href="#">
+                                    Social engagement
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col div-content">
+                    <div class="container-xxl content" style="padding: 4% 4% 0 4%;">
+                        <div class="row" style="border-bottom: 2px solid red;width: 70px;">
+                            <h5>Details</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9 col-xxl-9 detail">
+                                <div class="title">
+                                    <h5 style="text-align: center;">ALL ABOUT AMERICA</h5>
+                                </div>
+                                <div class="row" style="padding: 15px 15px 15px 0px;">
+                                    <a href="#" class="col main-photo text-center">
+                                        <img src="https://picsum.photos/1600/975" class="card-img-top position-relative"
+                                            alt="...">
+                                        <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                            style="margin-top:0;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                <path
+                                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                            </svg>
+                                            <p style="margin-top: 5px;">4</p>
+                                        </div>
+                                        <div class="box-desciption">
+                                            <div class="bottom-photo-text">
+                                                Trần đời ai oán có ai kém tinh tế như ông ny em không? Em
+                                                với ny yêu
+                                                nhau 3 năm.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="card text-center details-content" style="margin-top:40px;">
+                                        <div class="card-body" style="text-align: left;">
+                                            <h5 class="card-title">oh shit here we go again</h5>
+                                            <p class="card-text">Con gái toàn kiểu : trả lời thì cộc lốc xong
+                                                tới lúc lại chê người ta nhạt ?!?
+                                                Nói thật không biết ở đây có ông nào gặp phải mấy trường hợp
+                                                giống như tôi không? Tính sơ sơ thì cuộc đời tôi
+                                                chắc cũng đã đưa chuyện, ib tán khoảng 5-6 em rồi mà trước giờ
+                                                thấy em nào cũng như em nào, rep ib thì toàn cụt
+                                                ngủn 1 mẩu như cho có, mình hỏi gì thì trả lời nấy. Nhưng cuối
+                                                cùng lại toàn quay ra chê mình nhạt, thế nó mới khổ.
+                                                Chả hiểu mình bị nhạt ở chỗ nào luôn trong khi mấy em cứ toàn
+                                                rep tin nhắn với cái thái độ hờ hững lạnh nhạt.
+                                                Điển hình như 1 em dạo gần đây tôi nói chuyện. Em này là tôi
+                                                được đứa bạn giới thiệu cho, cũng có gặp nhau ở ngoài 1
+                                                lần rồi, thấy đứa bạn tôi bảo em ý khen tôi trông sáng sủa, có
+                                                vẻ có cảm tình. Nghe thế thấy cũng có chút hi vọng. Ấy
+                                                mà cái lúc tôi nhắn tin quan tâm hỏi thăm thì toàn trả lời cộc
+                                                lốc, tôi hỏi gì em ý trả lời nấy, đã thế còn không có cả
+                                                chủ vị , trong khi tôi hơn em ý đến 2 tuổi. Nhẫn nại được mấy
+                                                hôm , thấy em ý vẫn không có tí thay đổi nào nên tôi cũng xin
+                                                phép chào thua bỏ cuộc, nghĩ chắc là em ý không thích mình nên
+                                                mới tỏ thái độ như thế. Ai ngờ hôm nay nghe đứa bạn kể em ý chê
+                                                tôi nhạt nhẽo, nói chuyện vô duyên, như hỏi cung??? Rồi mọi
+                                                người thử đọc tin nhắn này giữa tôi với em ý và cho tôi 1 cái
+                                                nhận
+                                                xét được không? Thế giờ phải nói chuyện với con gái như nào mới
+                                                được coi là có duyên, mới là mặn mòi vậy hả các bạn nữ?</p>
+                                            <p class="card-text">Bây giờ thì thế này nhé<a href="#"
+                                                    style="color: blue;">Ah shit</a></p>
+                                        </div>
+                                        <a href="#" style="color: red;">Go somewhere</a>
+                                    </div>
+                                    <div class="related-news" style="padding: 0px;">
+                                        <div class="title" style="border-bottom: 2px solid red; width: 130px;">
+                                            <h5>Related news</h5>
+                                        </div>
+                                        <!-- start related card -->
+                                        <div class="card-link">
+                                            <div class="row">
+                                                <div class="col-md-4 col-xxl-4" style="min-width: 14rem;">
+                                                    <div class="card position-relative">
+                                                        <img src="https://picsum.photos/1280/800" class="card-img-top"
+                                                            alt="...">
+                                                        <div
+                                                            class="sale-div position-absolute badge badge-primary d-flex justify-content-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                                height="20" fill="currentColor" class="bi bi-eye"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                                <path
+                                                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                            </svg>
+                                                            <p style="margin-top: 5px;">4</p>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h6 class="card-title">Kieu dai ca</h6>
+                                                            <p class="card-text text-muted">Some quick example text to
+                                                                build
+                                                                on
+                                                                the card
+                                                                title and make up
+                                                                the bulk of the card's content.</p>
+                                                        </div>
+                                                        <div class="card-text d-flex justify-content-between"
+                                                            style="padding: 20px;">
+                                                            <p class=" text-muted">
+                                                                <img src="photos/cnn_2.gif" width="30px"
+                                                                    height="15px">(CNN)
+                                                            </p>
+                                                            <p class="text-muted">
+                                                                two days ago
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="card-img-overlay"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-xxl-4" style="min-width: 14rem;">
+                                                    <div class="card position-relative">
+                                                        <img src="https://picsum.photos/1280/800" class="card-img-top"
+                                                            alt="...">
+                                                        <div
+                                                            class="sale-div position-absolute badge badge-primary d-flex justify-content-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                                height="20" fill="currentColor" class="bi bi-eye"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                                <path
+                                                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                            </svg>
+                                                            <p style="margin-top: 5px;">4</p>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h6 class="card-title">Kieu dai ca</h6>
+                                                            <p class="card-text text-muted">Some quick example text to
+                                                                build
+                                                                on
+                                                                the card
+                                                                title and make up
+                                                                the bulk of the card's content.</p>
+                                                        </div>
+                                                        <div class="card-text d-flex justify-content-between"
+                                                            style="padding: 20px;">
+                                                            <p class=" text-muted">
+                                                                <img src="photos/cnn_2.gif" width="30px"
+                                                                    height="15px">(CNN)
+                                                            </p>
+                                                            <p class="text-muted">
+                                                                two days ago
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="card-img-overlay"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-xxl-4" style="min-width: 14rem;">
+                                                    <div class="card position-relative">
+                                                        <img src="https://picsum.photos/1280/800" class="card-img-top"
+                                                            alt="...">
+                                                        <div
+                                                            class="sale-div position-absolute badge badge-primary d-flex justify-content-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                                height="20" fill="currentColor" class="bi bi-eye"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                                <path
+                                                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                            </svg>
+                                                            <p style="margin-top: 5px;">4</p>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h6 class="card-title">Kieu dai ca</h6>
+                                                            <p class="card-text text-muted">Some quick example text to
+                                                                build
+                                                                on
+                                                                the card
+                                                                title and make up
+                                                                the bulk of the card's content.</p>
+                                                        </div>
+                                                        <div class="card-text d-flex justify-content-between"
+                                                            style="padding: 20px;">
+                                                            <p class=" text-muted">
+                                                                <img src="photos/cnn_2.gif" width="30px"
+                                                                    height="15px">(CNN)
+                                                            </p>
+                                                            <p class="text-muted">
+                                                                two days ago
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="card-img-overlay"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end related card -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xxl-3 right">
+                                <div class="title" style="border-bottom: 2px solid red;width: 120px;">
+                                    <h5>Related news</h5>
+                                </div>
+                                <div class="card-link card-right">
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#" class="col side-photo text-center">
+                                            <img src="https://picsum.photos/1366/768"
+                                                class="card-img-top position-relative" alt="...">
+                                            <div class="sale-div position-absolute badge badge-primary d-flex justify-content-center"
+                                                style="margin-top:0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20"
+                                                    fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <p style="margin-top: 5px;">4</p>
+                                            </div>
+                                            <div class="box-desciption">
+                                                <div class="bottom-photo-text">
+                                                    Quả đấy nghe xong em c.áu không chịu được.
+                                                </div>
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer container-xxl" style="background-color:white;height: 100px;border: 0.01em solid #dfdfdf;">
+            <div class="row">
+                <div class="col-md-2 col-xxl-2">
+                </div>
+                <div class="col text-center">
+                    <p class="text-monospace">hahahaha copyright 2020 hahahaha</p>
+                    <a href="#" style="color:black;float: left;">Back to top</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+
+</html>
